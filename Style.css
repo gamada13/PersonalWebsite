@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=VT323&display=swap'); 
+
+body {
+    background-color: #b9b5a8a2;
+    
+}
+
+.logo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 2rem;
+}
+
+.primary-header{
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+   
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.primary-navigation{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(138, 98, 98, 0.1);
+   
+
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation {
+        background: hsl(138, 98, 98, 0.1);
+        backdrop-filter: blur(2rem);
+
+    }
+}
+
+@media (max-width: 35em) {
+    .primary-navigation {
+        --gap:2em;
+
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+
+        flex-direction: column;
+        padding: min(30vh, 20rem) 2em ;
+
+        transform: translateX(50%);
+
+
+    }
+
+    .primary-navigation[data-visible = "true"]{
+        transform: translateX(0%);
+        
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: url("assets/icons8-hamburger-menu-24.png");
+        background-repeat: no-repeat;
+        border:0;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+
+    }
+}
+
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+/* section one */
+.heading1 {
+    padding-left: 30.5%;
+    padding-right: 30%;
+    padding-top: 10%;
+    padding-bottom: 0%;
+}
+.heading2{
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.heading3 {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.heading4 {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 0%;
+    padding-bottom: 10%;
+}
+.heading1 h1{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(13, 77, 91, 0.983);
+    
+}
+.heading2 h2 {
+    font-size: 76px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(36, 36, 36);
+    margin: 3% 0px 0px;
+}
+.heading3 h3{
+    font-size: 76px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(113, 113, 100);
+    margin: 1% 0px 0px;
+}
+.heading4 h4{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(106, 106, 98, 0.815);
+    margin: 10% 0px 0px;
+}
+
+/* section two */
+
+.section2 h2 {
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(75, 75, 41);  
+}
+#about-me {
+    width: 10px;
+    height: 10px;
+}
+#potrait {
+    
+    
+
+}
+#about-me p{
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(79, 221, 181);
+}
+
+/* section three */
+
+.section3 {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    text-align: center;
+    justify-content: space-between;
+    height: 250px; 
+}
+.project1{
+    justify-content: space-between;
+    width: 66.6%;
+    background: rgb(189, 194, 42);
+}
+.project2{
+    width: 66.6%;
+    background: green;
+}
+.project3{
+    width: 66.6%;
+    background: rgb(40, 74, 87);
+}
+
+
+/* section three */
+
+
+.section4 {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.experiences {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    text-align: center;
+    justify-content: space-between;
+    height: 250px; 
+}
+.experience1{
+    justify-content: space-between;
+    width: 66.6%;
+    background: rgb(189, 194, 42);
+}
+.work{
+    width: 66.6%;
+    background: green;
+}
+
+.square1, .square2{
+    list-style: square;
+    
+}
+  
+
+
+body {
+
+    overflow-x: hidden;
+}
+
+footer {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+
